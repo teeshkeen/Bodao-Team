@@ -1,0 +1,510 @@
+@import url(./_normalize.scss);
+body {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container_full_weight {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.nav__inner .nav__inner_geo_logo {
+  margin-right: 20px;
+}
+.nav__inner .nav__inner_geo {
+  display: flex;
+}
+.nav__inner .nav__inner_geo span {
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nav__inner .nav__inner_geo span:not(:last-child) {
+  margin-bottom: 10px;
+}
+.nav__inner .nav__inner_call {
+  display: flex;
+}
+.nav__inner .nav__inner_call .nav__inner_call_logo {
+  margin-right: 20px;
+}
+.nav__inner .nav__inner_call .nav__inner_call_text .number_phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.nav__inner .nav__inner_call .nav__inner_call_text .whatsapp {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.home .home__inner {
+  background-image: url(../img/home.png);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-bottom: 150px;
+}
+.home .home__inner .home__inner_pretitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  padding-top: 85px;
+  margin-bottom: 60px;
+}
+.home .home__inner .home__inner_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 170px;
+}
+.home .home__inner .home__inner_title h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: uppercase;
+}
+.home .home__inner .home__inner_undertitle {
+  display: flex;
+  align-items: center;
+}
+.home .home__inner .home__inner_undertitle .home__inner_undertitle_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 500px;
+}
+.home .home__inner .home__inner_undertitle .home__inner_undertitle_btn {
+  background: #F9BA50;
+  border-radius: 0px 40px 40px 0px;
+}
+.home .home__inner .home__inner_undertitle .home__inner_undertitle_btn .sign_up_btn {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .home__inner .home__inner_undertitle .home__inner_undertitle_btn .sign_up_btn span {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.about {
+  margin-bottom: 300px;
+}
+.about .about__inner {
+  display: flex;
+}
+.about .about__inner .about__inner_photos {
+  display: grid;
+}
+.about .about__inner .about__inner_photos .about__inner_photo_little {
+  position: relative;
+  margin: -300px 200px;
+}
+.about .about__inner .about__inner_text h2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82px;
+  text-transform: uppercase;
+}
+.about .about__inner .about__inner_text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+.about .about__inner .about__inner_text .home__inner_undertitle_btn {
+  background: #F9BA50;
+  border-radius: 0px 40px 40px 0px;
+  max-width: 277px;
+}
+.about .about__inner .about__inner_text .home__inner_undertitle_btn .sign_up_btn {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .about__inner .about__inner_text .home__inner_undertitle_btn .sign_up_btn span {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.coach {
+  margin-bottom: 300px;
+}
+.coach .coach__inner h2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 100px;
+}
+.coach .coach__inner .coach__inner_leftright {
+  display: flex;
+}
+.coach .coach__inner .coach__inner_leftright .coach__inner_left {
+  text-align: baseline;
+  margin-right: 30px;
+}
+.coach .coach__inner .coach__inner_leftright .coach__inner_left .h2_coach {
+  position: relative;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  margin: -50px 0;
+}
+.coach .coach__inner .coach__inner_leftright .coach__inner_right .h2_coach {
+  position: relative;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+.coach .coach__inner .coach__inner_leftright .coach__inner_right p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.style .style__title .style__title_h2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  text-transform: uppercase;
+}
+.style .style_container_full_weight {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.style .style_container_full_weight .styles {
+  display: flex;
+  margin-bottom: 150px;
+}
+.style .style_container_full_weight .styles .style__inner_card_box {
+  width: 480px;
+  height: 700px;
+  background-image: url(../img/box_style.jpg);
+  text-align: center;
+}
+.style .style_container_full_weight .styles .style__inner_card_box .span_box {
+  position: relative;
+  top: 321px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  text-shadow: 2px 5px black;
+}
+.style .style_container_full_weight .styles .style__inner_card_kbox {
+  width: 480px;
+  height: 700px;
+  background-image: url(../img/kickbox_style.jpg);
+  text-align: center;
+}
+.style .style_container_full_weight .styles .style__inner_card_kbox .span_kbox {
+  position: relative;
+  top: 321px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  text-shadow: 2px 5px black;
+}
+.style .style_container_full_weight .styles .style__inner_card_mma {
+  width: 480px;
+  height: 700px;
+  background-image: url(../img/mma_style.jpg);
+  text-align: center;
+}
+.style .style_container_full_weight .styles .style__inner_card_mma .span_mma {
+  position: relative;
+  top: 321px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  text-shadow: 2px 5px black;
+}
+.style .style_container_full_weight .styles .style__inner_card_jiujitsu {
+  width: 480px;
+  height: 700px;
+  background-image: url(../img/jiujitsu_style.jpg);
+  text-align: center;
+}
+.style .style_container_full_weight .styles .style__inner_card_jiujitsu .span_jj {
+  position: relative;
+  top: 321px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  text-shadow: 2px 5px black;
+}
+
+.price {
+  flex-wrap: wrap;
+  font-family: "Ubuntu", sans-serif;
+}
+.price .price_title_h2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.price .price__inner {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.price .price__inner .price__inner_card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 410px;
+  padding: 30px;
+  background: #17171A;
+}
+.price .price__inner .price__inner_card .term {
+  margin: 0 auto;
+}
+.price .price__inner .price__inner_card .term .price_term {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: baseline;
+}
+.price .price__inner .price__inner_card .term .price_term .date {
+  margin-right: 110px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+.price .price__inner .price__inner_card .term .price_term .day {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.price .price__inner .price__inner_card .term .price_info {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.price .price__inner .price__inner_card .term .price__inner_cost {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+.price .price__inner .price__inner_card .term .price__inner_cost .cost {
+  margin-right: 110px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+.price .price__inner .price__inner_card .term .price__inner_cost .cutcost {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: line-through;
+}
+.price .price__inner .price__inner_card .term .home__inner_undertitle_btn {
+  background: #F9BA50;
+  border-radius: 0px 40px 40px 0px;
+}
+.price .price__inner .price__inner_card .term .home__inner_undertitle_btn .sign_up_btn {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.price .price__inner .price__inner_card .term .home__inner_undertitle_btn .sign_up_btn span {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.price .price__inner_bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 150px;
+}
+.price .price__inner_bottom .price__inner_card_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 410px;
+  padding: 30px;
+  background: #17171A;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term {
+  margin: 0 auto;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price_term {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: baseline;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price_term .date {
+  margin-right: 110px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price_term .day {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price_info {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price__inner_cost {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price__inner_cost .cost {
+  margin-right: 110px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .price__inner_cost .cutcost {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: line-through;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .home__inner_undertitle_btn {
+  background: #F9BA50;
+  border-radius: 0px 40px 40px 0px;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .home__inner_undertitle_btn .sign_up_btn {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.price .price__inner_bottom .price__inner_card_bottom .term .home__inner_undertitle_btn .sign_up_btn span {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.instagram {
+  margin-bottom: 150px;
+}
+.instagram .instagram_title .inst_title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 87px;
+  text-transform: uppercase;
+}
+.instagram .instagram_title .instagram__inner {
+  display: flex;
+  justify-content: space-around;
+}
+.instagram .instagram_title .instagram__inner .first_line {
+  display: flex;
+}
+
+footer .footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+footer .footer__inner .footer__inner_left {
+  display: flex;
+}
+footer .footer__inner .footer__inner_left .footer_logo {
+  margin-bottom: 20px;
+}
+footer .footer__inner .footer__inner_left .footer__inner_discription {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-bottom: 42px;
+}
+footer .footer__inner .footer__inner_left .socials {
+  display: flex;
+}
+footer .footer__inner .footer__inner_left .socials li:not(:last-child) {
+  margin-right: 50px;
+  margin-bottom: 42px;
+}
+footer .footer__inner .footer__inner_left .socials a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+footer .footer__inner .footer__inner_center {
+  display: grid;
+}
+footer .footer__inner .footer__inner_center .footer__nav_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 63px;
+}
+footer .footer__inner .footer__inner_center .footer__nav_inner li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+footer .footer__inner .footer__inner_right {
+  display: grid;
+}
+footer .footer__inner .footer__inner_right .footer__contacts_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 63px;
+}
+footer .footer__inner .footer__inner_right .footer__contacts_inner li .yellow {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+  color: #F9BA50;
+}
+footer .footer__inner .footer__inner_right .footer__contacts_inner li .white {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=style.css.map */
